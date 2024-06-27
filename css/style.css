@@ -9,19 +9,18 @@
   }
 
   :root {
-    --color-background: #081b29;
+    --color-background: #f5ebcd;
     --color-black: #212121;
-    --color-full-black: #000000;
-    --color-text: #ededed;
-    --color-text-out: #032f53;
-    --color-primary: #0ef;
-    --color-secondary: #990ff5f7;
+    --color-black-heavy: #000000;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-primary: #ffbf00;
+    --color-secondary: #fff2cc;
     --color-white: #ffffff;
     --color-red: #e74c3c;
     --color-green: #2ecc71;
-    --color-separate: aliceblue;
-    --color-hover: #0ef;
-  
+    --color-separate: #cccccc;
+
     --fontPadrao: "PoppinsRegular", "Rubik", sans-serif;
     --fontDestaque: "PoppinsMedium";
   }
@@ -38,4 +37,93 @@ body {
     color: var(--color-text);
     background: var(--color-background);
     
+}
+
+
+/* cabeçalho */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10%;
+  background: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* logo */
+.logo {
+  position: relative;
+  font-size: 20px;
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  animation: slideRight 1s ease forwards;
+}
+
+/* barra de navegação */
+.navbar a {
+  display: inline-block;
+  font-size: 17px;
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover {
+  color: var(--color-primary);
+}
+
+.navbar a.active {
+  text-decoration: underline var(--color-primary);
+}
+
+
+
+/* conteudo */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.home-content {
+  max-width: 600px;
+  animation: slideLeft 1s ease forwards;
+
+}
+
+
+/* animação logo */
+@keyframes slideRight {
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* animação navbar */
+@keyframes slideTop {
+  0%{
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
