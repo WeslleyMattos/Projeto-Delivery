@@ -1,17 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Você Pede</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Você Pede</title>
 
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/fontawesome.css">
-  <link rel="stylesheet" href="./css/animate.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- background topo -->
+    <div class="bg-top"></div>
 
-</body>
+    <!-- header -->
+    <header class="width-fix mt-5">
+
+      <div class="card">
+
+        <div class="d-flex">
+
+          <div class="container-img"></div>
+
+          <div class="infos">
+            <h1><b>Você Pede</b></h1>
+            <div class="infos-sub">
+              <p class="status-open"><i class="fa fa-clock"></i> Aberta</p>
+              <a href="#" class="link"> Ver mais </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <!-- categorias do menu -->
+    <section class="categoria width-fix mt-4">
+      <div class="container-menu" id="lista-Categorias">
+
+        <a href="#" class="item-categoria btn btn-white btn-sm mb-3 me-3 active">
+          <i class="fa fa-pizza-slice"></i>&nbsp; Pizzas Tradicionais
+        </a>
+        
+        <a href="#" class="item-categoria btn btn-white btn-sm mb-3 me-3 ">
+          <i class="fa fa-pizza-slice"></i>&nbsp; Pizzas Doces
+        </a>
+
+        <a href="#" class="item-categoria btn btn-white btn-sm mb-3 me-3">
+          <i class="fa fa-cocktail"></i>&nbsp; Bebidas
+        </a>
+
+        <a href="#" class="item-categoria btn btn-white btn-sm mb-3 me-3">
+          <i class="fa fa-utensils"></i>&nbsp; Porções
+        </a>
+
+        <a href="#" class="item-categoria btn btn-white btn-sm mb-3 me-3">
+          <i class="fa fa-hamburger"></i>&nbsp; Smash
+        </a>
+
+        <a href="#" class="item-categoria btn btn-white btn-sm mb-3 me-3">
+          <i class="fa fa-hamburger"></i>&nbsp; Hotdogs
+        </a>
+
+
+      </div>
+
+    </section>
+
+    <!-- cardapio -->
+     <section class="lista width-fix mt-0 pb-5" id="listaItensCardapio">
+
+       <div class="container-group mb-5">
+          <p class="title-categoria"><b>Pizzas Tradicionais</b></p>
+
+        <div class="card mb-2 item-cardapio">
+          <div class="d-flex">
+              <div class="container-img-produto"
+              style="background-image: url('./img/calabresa.jpg'); background-size: cover;">
+              </div>
+
+              <div class="infos-produto">
+                <p class="name"><b>Calabresa</b></p>
+                <p class="description">Molho de tomate, mussarela, catupiry, orégano, azeitonas, calabresa e cebola.</p>
+                <p class="price"><b>R$ 39,90</b></p>
+              </div>
+          </div>
+        </div>
+
+        <div class="card mb-2 item-cardapio">
+          <div class="d-flex">
+              <div class="container-img-produto"
+              style="background-image: url('./img/canadense.jpg'); background-size: cover;">
+              </div>
+
+              <div class="infos-produto">
+                <p class="name"><b>Lombo Canadense</b></p>
+                <p class="description">Molho de tomate, mussarela, catupiry, orégano, azeitonas, Lombo, abacaxi.</p>
+                <p class="price"><b>R$ 39,90</b></p>
+              </div>
+          </div>
+        </div>
+
+        <div class="card mb-2 item-cardapio">
+          <div class="d-flex">
+              <div class="container-img-produto"
+              style="background-image: url('./img/lombo.jpg'); background-size: cover;">
+              </div>
+
+              <div class="infos-produto">
+                <p class="name"><b>Lombo com Calabresa</b></p>
+                <p class="description">Molho de tomate, mussarela, catupiry, orégano, azeitonas, lombo, calabresa.</p>
+                <p class="price"><b>R$ 39,90</b></p>
+              </div>
+          </div>
+        </div>
+
+     </section>
+
+     <!-- menu rodapé -->
+      <section class="menu-bottom" id="menu-bottom">
+        <a href="#" class="menu-bottom-item active">
+          <i class="fas fa-book-open"></i>&nbsp; Cardápio
+        </a>
+        <a href="#" class="menu-bottom-item ">
+          <i class="fas fa-utensils"></i>&nbsp; Pedido
+        </a>
+        <a href="#" class="menu-bottom-item ">
+          <span class="badge-total-carrinho">2</span>
+          <i class="fas fa-shopping-cart"></i>&nbsp; Carrinho
+        </a>
+
+
+      </section>
+
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/cardapio.js"></script>
+  </body>
 </html>
