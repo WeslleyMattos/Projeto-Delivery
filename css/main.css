@@ -8,6 +8,7 @@
     src: url('../fonts/Poppins-Regular.otf');
 }
 
+/* VARIAVEIS GLOBAIS */
 :root {
     --color-background: #fffdf7;
     --color-black: #212121;
@@ -34,6 +35,11 @@ b {
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
 }
 
+.hidden {
+    display: none !important;
+}
+
+/* Cor do banner no top */
 .bg-top {
     position: absolute;
     top: 0px;
@@ -43,12 +49,14 @@ b {
     background-color: var(--color-secondary);
 }
 
+/* Container Fixo -20px pra não colar nas laterais*/
 .width-fix {
     width: calc(100% - 20px);
     max-width: 800px;
     margin: 0px auto;
 }
 
+/* Box Card */
 .card {
     border-radius: 20px;
     padding: 15px 20px;
@@ -57,6 +65,7 @@ b {
     border: none !important;
 }
 
+/* logo */
 .container-img {
     width: 60px;
     height: 60px;
@@ -68,6 +77,7 @@ b {
     border-radius: 20px;
 }
 
+/* informações do card page home */
 .infos {
     flex: 1;
     display: flex;
@@ -103,6 +113,7 @@ b {
     color: var(--color-primary) !important;
 }
 
+/* CATEGORIAS */
 section.categoria {
     position: sticky;
     top: 0;
@@ -127,6 +138,7 @@ section.categoria {
     flex: none;
 }
 
+/* botão branco global grande */
 .btn-white {
     color: var(--color-black);
     background-color: var(--color-white);
@@ -136,16 +148,18 @@ section.categoria {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+.btn-white:hover, .btn-white.active {
+    background-color: var(--color-primary);
+}
+
+/* botão global pequeno */
 .btn-sm {
    padding: 8px 13px;
    border-radius: 15px;
    font-size: 16px;
 }
 
-.btn-white:hover, .btn-white.active {
-    background-color: var(--color-primary);
-}
-
+/* LISTA DE ITENS CARDAPIO */
 .title-categoria {
     color: var(--color-black);
     margin-left: 5px;
@@ -191,6 +205,8 @@ section.categoria {
     margin-bottom: 0px;
 }
 
+
+/* Menu rodapé */
 .menu-bottom {
     position: fixed;
     right: 0;
@@ -239,4 +255,138 @@ section.categoria {
     position: relative;
     padding-top: 2px;
     margin-right: 2px;
+}
+
+.menu-bottom.disable {
+    justify-content: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Detalhes do produto */
+
+.bg-top.details {
+    height: 410px;
+}
+
+.container-voltar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    font-size: 18px;
+    color: var(--color-black) !important;
+}
+
+/* imagem detalhes */
+
+.container-imagem-produto {
+    height: 240px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.sub-title-categoria {
+    color: var(--color-text);
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.card-opcionais {
+    display: flex;
+    flex-direction: row;
+}
+
+.infos-produto-opcional {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.infos-produto-opcional .name {
+    color: var(--color-black);
+}
+
+.opcionais .badge {
+    float: right;
+    background-color: var(--color-secondary);
+    padding: 7px 12px;
+    border-radius: 50px;
+    color: var(--color-black);
+    margin-top: 5px;
+}
+
+.checks {
+    margin-left: 10px;
+}
+
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: var(--color-input-out);
+    transition: 0.3s;
+}
+
+.container-check:hover input~.checkmark {
+    background-color: var(--color-text-out);
+}
+
+.container-check input:checked~.checkmark {
+    background-color: var(--color-primary);
+    transition: 0.3s;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.container-check input:checked~.checkmark:after {
+    display: block
+}
+
+.container-check .checkmark:after {
+    left: 9px;
+    top: 7px;
+    width: 6px;
+    height: 10px;
+    border: solid var(--color-white);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
 }
