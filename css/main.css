@@ -22,6 +22,7 @@
     --color-green: #2ecc71;
     --color-separate: #cccccc;
     --color-input-out: #ececec;
+    --color-bg-icon: #73e707;
 }
 
 html, body {
@@ -241,7 +242,7 @@ section.categoria {
 
 .menu-bottom-item {
     text-decoration: none!important;
-    color: var(--color-text-out) !important;
+    color: var(--color-white) !important;
     font-size: 14px;
     flex: 1;
     text-align: center;
@@ -586,3 +587,112 @@ textarea {
 .color-primary {
     color: var(--color-primary);
 }
+
+.card-address {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icon-details {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-bg-icon);
+    color: var(--color-black);
+    font-size: 22px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-address .infos {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.card-address .infos .name {
+    color: var(--color-black);
+}
+
+.icon-edit {
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+/* Page Pedido */
+
+.card-status-pedido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.card-status-pedido .infos {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.card-status-pedido .infos .name {
+    color: var(--color-black);
+}
+
+.detalhes-produto {
+    flex: 1;
+    padding-left: 5px;
+}
+
+.detalhes-produto-acoes {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-right: 1px solid var(--color-separate);
+    color: var(--color-black);
+}
+
+.detalhes-produto-acoes:last-child {
+    border: none;
+}
+
+.detalhes-produto-acoes i {
+    font-size: 18px;
+}
+
+.pedido .name-total {
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.pedido .price-total {
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+.card-status-pedido.active {
+    background-color: var(--color-primary-out);
+}
+
+.card-status-pedido.pending {
+    opacity: 0.3;
+}
+
+.card-status-pedido.pending .img-icon-details {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.card-status-pedido.cancelado .img-icon-details {
+    background-color: var(--color-red);
+    color: var(--color-white);
+} 
