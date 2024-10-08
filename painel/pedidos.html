@@ -98,54 +98,211 @@
                   <a href="#" class="btn btn-white btn-sm">
                     <i class="fas fa-check-circle"></i>&nbsp; Concluídos
                   </a>
+
+                    <a class="dropdown">
+                        <button class="btn btn-white btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
+                            Filtrar por: <b>Todos</b>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="menuAcoes">
+                            <a class="dropdown-item" href="#"><i class="fas fa-motorcycle"></i> Entregas</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Retiradas</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-table"></i>Mesas</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-scroll"></i>Comandas</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-dot-circle"></i>Todos</a>
+                        </div>
+                    <a/>
+                </div>
                 </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <div class="row lista-pedidos">
-                  <div class="col-3">
-                    <div class="card card-pedido">
-                      <div class="card-pedido-header">
-                        <div class="dropdown">
-                            <button class="btn btn-white btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
-                                Pendentes
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="menuAcoes">
-                                <a href="#" class="dropdown-item">Mover para <b>Aceitos </b> <i class="fas fa-thumbs-up"></i></a>
-                                <a href="#" class="dropdown-item">Mover para <b>Em preparo </b><i class="fas fa-clock"></i></a>
-                                <a href="#" class="dropdown-item">Mover para <b>Em entrega </b><i class="fas fa-motorcycle"></i></a>
-                                <a href="#" class="dropdown-item">Mover para <b>Concluídos </b><i class="fas fa-check-circle"></i></a>
-                                <a href="#" class="dropdown-item">Recusar Pedido <i class="fas fa-times-circle"></i></a>
+                <div class="row lista-pedidos mt-5">
+                    <!-- Exemplo Entrega -->
+                    <div class="col-3">
+                        <div class="card card-pedido">
+
+                            <div class="card-pedido-header">
+                                <div class="dropdown">
+                                    <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
+                                        Pendente
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="menuAcoes">
+                                        <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                                        <a class="dropdown-item" href="#">Recusar Pedido <i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                                <p class="numero-pedido mt-2">#1</p>
                             </div>
-                            <p class="numero-pedido mt-2">#1</p>
-                        </div>
-                      </div>
 
-                      <div class="card-content">
-                        <div class="card-pedido-body mt-3">
-                            <p class="info-pedido">
-                                <i class="fas fa-user"></i> Weslley Renan
-                            </p>
-                            <p class="info-pedido">
-                                <i class="fas fa-motorcycle"></i> Entrega
-                            </p>
-                            <p class="info-pedido">
-                                <i class="fas fa-coins"></i> Dinheiro
-                                <span>Troco para R$ 50,00</span>
-                            </p>
-                        </div>
+                            <div class="card-content">
 
-                        <div class="separate"></div>
+                                <div class="card-pedido-body mt-3">
+                                    <p class="info-pedido">
+                                        <i class="fas fa-user"></i> Weslley Renan
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-motorcycle"></i> Entrega
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-coins"></i> Dinheiro
+                                        <span>Troco para R$ 50,00</span>
+                                    </p>
+                                </div>
 
-                        <div class="card-pedido-footer">
-                            <p class="horario-pedido"> Recebido há 33 minutos</p>
-                            <p class="total-pedido"><b>R$ 143,50</b></p>
+                                <div class="separate"></div>
+
+                                <div class="card-pedido-footer">
+                                    <p class="horario-pedido">Recebido há 33 minutos</p>
+                                    <p class="total-pedido"><b>R$ 143,50</b></p>
+                                </div>
+
+                            </div>
+
                         </div>
-                      </div>
                     </div>
-                  </div>
+
+                    <!-- Exemplo Retirada -->
+                    <div class="col-3">
+                        <div class="card card-pedido">
+
+                            <div class="card-pedido-header">
+                                <div class="dropdown">
+                                    <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
+                                        Pendente
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="menuAcoes">
+                                        <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                                        <a class="dropdown-item" href="#">Recusar Pedido <i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                                <p class="numero-pedido mt-2">#2</p>
+                            </div>
+
+                            <div class="card-content">
+
+                                <div class="card-pedido-body mt-3">
+                                    <p class="info-pedido">
+                                        <i class="fas fa-user"></i> Matheus Souza
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-shopping-bag"></i> Retirada
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-credit-card"></i> Débito
+                                    </p>
+                                </div>
+
+                                <div class="separate"></div>
+
+                                <div class="card-pedido-footer">
+                                    <p class="horario-pedido">Recebido há 10 minutos</p>
+                                    <p class="total-pedido"><b>R$ 120,00</b></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Mesa -->
+                    <div class="col-3">
+                        <div class="card card-pedido">
+
+                            <div class="card-pedido-header">
+                                <div class="dropdown">
+                                    <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
+                                        Pendente
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="menuAcoes">
+                                        <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                                        <a class="dropdown-item" href="#">Recusar Pedido <i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                                <p class="numero-pedido mt-2">#3</p>
+                            </div>
+
+                            <div class="card-content">
+
+                                <div class="card-pedido-body mt-3">
+                                    <p class="info-pedido">
+                                        <i class="fas fa-user"></i> Patricia Medeiros
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-table"></i> Mesa 12
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-id-card-alt"></i> Garçom Leael
+                                    </p>
+                                </div>
+
+                                <div class="separate"></div>
+
+                                <div class="card-pedido-footer">
+                                    <p class="horario-pedido">Recebido há 33 minutos</p>
+                                    <p class="total-pedido"><b>R$ 80,00</b></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Comanda -->
+                    <div class="col-3">
+                        <div class="card card-pedido">
+
+                            <div class="card-pedido-header">
+                                <div class="dropdown">
+                                    <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
+                                        Pendente
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="menuAcoes">
+                                        <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                                        <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                                        <a class="dropdown-item" href="#">Recusar Pedido <i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                                <p class="numero-pedido mt-2">#4</p>
+                            </div>
+
+                            <div class="card-content">
+
+                                <div class="card-pedido-body mt-3">
+                                    <p class="info-pedido">
+                                        <i class="fas fa-user"></i> Felipe Almeida
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-scroll"></i> Comanda 743
+                                    </p>
+                                    <p class="info-pedido">
+                                        <i class="fas fa-id-card-alt"></i> Garçom Juliana
+                                    </p>
+                                </div>
+
+                                <div class="separate"></div>
+
+                                <div class="card-pedido-footer">
+                                    <p class="horario-pedido">Recebido há 45 minutos</p>
+                                    <p class="total-pedido"><b>R$ 69,90</b></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
